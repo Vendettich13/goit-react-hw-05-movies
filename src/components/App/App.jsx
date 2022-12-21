@@ -5,8 +5,8 @@ import { Container } from "./App.styled";
 
 export function App() {
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState('');
-  const [page, setPage] = useState(1);
+  // const [query, setQuery] = useState('');
+  // const [page, setPage] = useState(1);
 
   useEffect(() => {
     getTrendingMovies().then(movies => setMovies(movies.data.results))
