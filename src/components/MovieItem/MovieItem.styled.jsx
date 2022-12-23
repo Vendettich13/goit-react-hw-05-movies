@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export const Image = styled.img`
     width: 100%;
@@ -23,4 +24,8 @@ export const Text = styled.p`
     padding: 10px;
     display: flex;
     align-items: center;
+`
+export const Link = styled(NavLink)`
+    text-decoration: none;
+    color: black;
 `
