@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { getMovieActors } from "utils/moviesdb";
 
 export default function Cast() {
