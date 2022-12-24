@@ -29,6 +29,7 @@ export const Button = styled.button`
     font-size: 20px;
 
     box-shadow: 0px 0px 5px 0px rgb(30, 1, 252);
+    transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
     p {
         margin-left: 5px;

@@ -1,4 +1,4 @@
-import { useSearchParams, useLocation } from "react-router-dom";
+import { useSearchParams} from "react-router-dom";
 import { MovieList } from "components/MovieList/MovieList";
 import { useEffect, useState } from "react";
 import { getMovieBySearch } from "utils/moviesdb";
@@ -12,7 +12,6 @@ export default function Movies() {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const searchQuery = searchParams.get('query');
-    const location = useLocation();
 
     useEffect(() => {
         if (searchQuery === '' || searchQuery === null) { return }
@@ -42,6 +41,6 @@ export default function Movies() {
         <Button type="submit"><FcSearch size={25}/><p>Search</p></Button>
         </Form>
         <ToastContainer/>
-        <MovieList movies={movies} location={location} />
+        <MovieList movies={movies} />
         </>
 }

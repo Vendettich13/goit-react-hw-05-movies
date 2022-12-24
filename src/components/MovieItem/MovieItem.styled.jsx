@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Image = styled.img`
     width: 100%;
     height: auto;
 `
 
-export const Box = styled.li`
+export const Box = styled.div`
     border-radius: 10px;
     overflow: hidden;
 
@@ -20,12 +20,13 @@ export const Box = styled.li`
 `
 
 export const Text = styled.p`
+    height: 30px;
     font-weight: 500;
-    padding: 10px;
+    padding: 10px 10px 5px;
     display: flex;
     align-items: center;
 `
-export const Link = styled(NavLink)`
+export const MyLink = styled(Link)`
     text-decoration: none;
     color: black;
 `

@@ -5,7 +5,7 @@ import { Title } from "./Home.styled";
 
 export default function Home() {
     const [movies, setMovies] = useState([]);
-    const [error, setError] = useState('')
+    const [error, setError] = useState(null);
 
     useEffect(() => {
     getTrendingMovies().then(movies => setMovies(movies.data.results)).catch(error => setError(error.message))

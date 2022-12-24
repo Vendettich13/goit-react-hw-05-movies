@@ -11,7 +11,7 @@ export function SharedLayout() {
         <Link to='/movies'>Movies</Link>
       </Nav>
       </Header>
-        <main style={{ padding: '20px 0' }}></main>
+        <main style={{ padding: '10px 0' }}></main>
         <Suspense fallback={<div>Loading page...</div>}>
         <Outlet />
       </Suspense>
