@@ -9,7 +9,7 @@ export function MovieItem({ movie: { poster_path, title, name, id, vote_average 
     return <li>
         <MyLink to={`/movies/${id}`} state={{ from: location }} >
         <Box>
-        <Image src={`${BASE_IMG_URL}` + poster_path} alt={title || name} />
+        <Image src={poster_path ? `${BASE_IMG_URL}` + poster_path : 'https://static7.depositphotos.com/1021974/739/i/950/depositphotos_7397821-stock-photo-cinema.jpg'} alt={title || name} />
                 <Text style={{fontSize: '20px'}}>{title || name}</Text>
                 <Text>Rate: {vote_average.toFixed(1)} / 10</Text>
         </Box>
